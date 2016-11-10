@@ -1,0 +1,9 @@
+<h1> Please enter a number to guess: </h1>
+
+<%if @number_guess == @static_number %>
+  <p> That's correct!</p>
+  <% elsif @number_guess > @static_number %>
+  <p>That's too high! Please guess lower </p>
+  <% elsif @number_guess < @static_number %>
+  <p> "That's too low! Please guess higher"</p>
+<% end %>
